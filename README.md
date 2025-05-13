@@ -39,7 +39,11 @@ python3 -m pip install -U numpy==1.26.4 \
 
 ## Chatbot App: Pre-Trained Model
 
-Lastly, we need to download a pre-trained LLM for the chatbot app. For this
+Hardware requirements: By using a quantized pre-trained model, this chatbot app
+can run on as little as 8 CPU cores with 8 GB of RAM. It will not be the fastest,
+but works pretty well!
+
+We also need to download a pre-trained LLM for the chatbot app. For this
 example, we'll use a pre-processed model from HuggingFace that can be downloaded
 directly in the GGUF format. It up to you to agree to their license terms as
 needed.
@@ -53,6 +57,9 @@ This model is around 16 GB so plan accordingly!
 
 
 ## AudioCraft App: Script and Demos
+
+Harware requirements: We have tested this app using 16 CPU cores, 16 GB of RAM,
+and one NVIDIA A100 40 GB card. It should work using a variety of GPU offerings.
 
 See the AudioCraft GitHub for [the demo
 script](https://github.com/facebookresearch/audiocraft/blob/main/demos/musicgen_app.py)
