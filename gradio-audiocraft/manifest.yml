@@ -1,0 +1,6 @@
+---
+name: Gradio AudioCraft
+category: Interactive Apps
+role: batch_connect
+description: |
+  This app will launch a Gradio web server to interact with Meta MusicGen and AudioGen models using AudioCraft.

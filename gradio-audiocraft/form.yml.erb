@@ -1,0 +1,32 @@
+---
+cluster:
+  - "yourcluster"
+form:
+  - auto_accounts
+  - auto_queues
+  - num_cores
+  - memory
+  - num_gpus
+  - bc_num_hours
+  - bc_num_slots
+  - enable_audiocraft_path
+  - audiocraft_path
+attributes:
+  num_cores: 16
+  memory: 16
+  num_gpus: 1
+  bc_num_slots: 1
+  bc_num_hours: 1
+  enable_audiocraft_path:
+    label: |
+      ADVANCED: Custom AUDIOCRAFT_CACHE_DIR
+    widget: 'check_box'
+    html_options:
+      data:
+        hide-audiocraft_path-when-un-checked: true
+  audiocraft_path:
+    widget: "text_field"
+    label: "Define the AUDIOCRAFT_CACHE_DIR environment variable for your AudioCraft app."
+    value: ""
+    help: |
+      `AUDIOCRAFT_CACHE_DIR` is the path to a config directory where AudioCraft will download models from HuggingFace and store for music generation.

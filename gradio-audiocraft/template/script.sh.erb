@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+echo "Starting main script..."
+echo "TTT - $(date)"
+
+set -x
+
+# activate the environment
+. ${HOME}/env-chatbot/bin/activate
+
+# launch the gradio application
+python3 $APP --listen="0.0.0.0" --server_port=${port} --share
+
+echo "TTT - $(date)"
